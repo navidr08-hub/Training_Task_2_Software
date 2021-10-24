@@ -64,7 +64,7 @@ def motor_control(direction, speed_value):
         data = '[f{}][f{}][r{}][r{}]'.format(speed_value, speed_value, speed_value, speed_value)
 
     if data != '':
-        send_data(data.encode('utf-8'))
+        send_data(data)
 
 
 def main(): 
